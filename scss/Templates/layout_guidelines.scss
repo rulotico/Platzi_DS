@@ -1,0 +1,51 @@
+@import "../tokens/typo.scss";
+@import "../tokens/colors.scss";
+@import "../tokens/spacing.scss";
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+
+.wrapper {
+    display: flex;
+}
+
+#sidebar {
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: $black_normal;
+    color: #fff;
+    transition: all 0.3s;
+    padding: $space * 3;
+    a{
+      color: $white_normal;
+    }
+    a:hover{
+      color: $secondary_action;
+    }
+}
+
+#content{
+  margin-left: 180px;
+  width: inherit;
+  max-width: 990px;
+  padding: $space * 3;
+
+}
+
+.sample-color{
+  width:30%;
+  height: 30px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}

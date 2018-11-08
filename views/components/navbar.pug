@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+  h1 top_navbar
+  p.secondary_action Componente basado en esta 
+    a.green_brand.bold(href="https://www.notion.so/rulotico/Top-Navbar-83d683a0466a4e7f8696648840e72373" target="_blank") documentación
+    |, para poder integrar un navbar, puedes utilizar los siguientes ejemplos:
+  hr
+  h3 Normal
+  .top_navbar
+    .top_navbar_brand.green_brand_background
+      
+    .top_navbar_menu
+      a(href="#") link
+      a(href="#") link
+      a(href="#") link
+      a(href="#") link
+      a(href="#") link
+      input.space_right_margin
+  br
+  textarea.code.w-100
+    |.top_navbar>.top_navbar_brand.green_brand_background+.top_navbar_menu>a(href="#") link+input.space_right_margin
+
+  h3 Mobile
+  .top_navbar.w-50
+    .top_navbar_brand.green_brand_background
+      
+    .top_navbar_menu
+
+  br
+  textarea.code.w-100
+    |.top_navbar>.top_navbar_brand.green_brand_background>input.space_right_margin

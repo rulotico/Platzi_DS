@@ -1,7 +1,61 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Platzi DS
+    //link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous")
+    //link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", attr)
+    //link(rel='stylesheet', href='/stylesheets/page_style.css')
+    link(rel='stylesheet', href='/stylesheets/style_main_0.0.0.min.css')
   body
-    block content
+    .wrapper
+      // Sidebar
+      nav#sidebar.animated.fadeInLeft
+        a(href="/") 
+          h3.green_brand Platzi DS
+        a(href='/principios') Principios
+        p.small.secondary_action Tokens
+        a(href='/Typo') Typo
+        br
+        a(href='/Colors') Color
+        br
+        a(href='/spacing') Spacing
+        br
+        a(href='/animations') Animation
+        br
+        p.small.secondary_action Componentes
+        a(href="/grid") Grid
+        br
+        a(href='/navbar') top_navbar
+        br
+        p.small.secondary_action Otras secciones
+        a(href='/whats_new') News
+        br
+        br
+        br
+        br
+        br
+        br
+        .small.secondary_action Para cualquier información contácta a 
+          a.small(href="mailto:rulotico@gmail.com") rulotico@gmail.com
+
+
+        //a.dropdown-toggle(href='#pageSubmenu', data-toggle='collapse', aria-expanded='false') Pages
+        //ul#pageSubmenu.collapse.list-unstyled
+          li
+            a(href='#') Page 1
+          |           
+          li
+            a(href='#') Page 2
+          |           
+          li
+            a(href='#') Page 3
+      // Page Content
+      #content.animated.fadeIn
+        // We'll fill this with dummy content
+        block content
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+  script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+  // Popper.JS
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js', integrity='sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ', crossorigin='anonymous')
+  // Bootstrap JS
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js', integrity='sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm', crossorigin='anonymous')

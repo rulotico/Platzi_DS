@@ -1,0 +1,68 @@
+//  ██╗··██╗███████╗██╗·····██████╗·███████╗██████╗·███████╗
+//  ██║··██║██╔════╝██║·····██╔══██╗██╔════╝██╔══██╗██╔════╝
+//  ███████║█████╗··██║·····██████╔╝█████╗··██████╔╝███████╗
+//  ██╔══██║██╔══╝··██║·····██╔═══╝·██╔══╝··██╔══██╗╚════██║
+//  ██║··██║███████╗███████╗██║·····███████╗██║··██║███████║
+//  ╚═╝··╚═╝╚══════╝╚══════╝╚═╝·····╚══════╝╚═╝··╚═╝╚══════╝
+@import "./tokens/typo.scss";
+@import "./tokens/colors.scss";
+@import "./tokens/spacing.scss";
+
+
+.code{
+  background-color: $black_normal;
+  color: $green_brand;
+    padding: $space;
+    border-radius: 2px;
+    font-family: courier;
+    font-size: 12px;
+}
+
+hr{
+  opacity: .3;
+}
+
+
+
+.border{
+  border: 1px solid $secondary_action
+}
+
+.text-center{
+  text-align: center;
+}
+
+
+
+// ------------------- Width
+.w-100{
+width: 100%
+}
+
+.w-50{
+  width: 50%
+}
+
+
+
+
+
+// @keyframes mymove {
+//     from {opacity: 1}
+//     to {opacity: 0}
+// }
+
+ @keyframes mymove {
+    0%   {opacity: 1}
+    25%  {opacity: 1}
+    50%  {opacity: .5}
+    75%  {opacity: .5}
+    90%  {opacity: .2}
+    100% {opacity: 1}
+}
+
+.mymove{
+  animation-name: mymove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}

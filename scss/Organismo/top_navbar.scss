@@ -1,0 +1,26 @@
+@import "../tokens/typo.scss";
+@import "../tokens/colors.scss";
+@import "../tokens/spacing.scss";
+.top_navbar{
+  top: 0;
+  left: 0;
+  background-color:$background_blue;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  &_brand{
+    width: 150px;
+    background-color: $green_brand;
+    height: 50px;
+  }
+  &_menu {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    >a{
+      margin: $space;
+      color: $primary_action
+    }
+  }
+}

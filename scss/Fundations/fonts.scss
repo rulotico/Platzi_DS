@@ -1,0 +1,39 @@
+@import "../tokens/typo.scss";
+@import "../tokens/colors.scss";
+@import "../tokens/spacing.scss";
+
+body, html{
+  font-family: $font;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: $black_normal
+}
+
+h1{
+  font-size:$h1;
+}
+h2{
+  font-size:$h2;
+}
+h3{
+  font-size:$h3;
+}
+h1,h2,h3{
+  margin-top: $space;
+  margin-bottom: $space;
+}
+
+p,a,.normal{
+  font-size: $p;
+  margin-top: $space;
+  margin-bottom: $space;
+
+}
+
+.small{
+  font-size: $small;
+}
+
+.bold{
+  font-weight: bolder;
+}
