@@ -40,6 +40,6 @@ gulp.task('style_min', function(){
 //gulp watch
 
 gulp.task('watch', ['style_min'], function (){
-  gulp.watch('scss/**/*.scss', ['style_min']);
-
+  gulp.watch('scss/**/*.scss', gulp.series('style_min'));
+  
 });
